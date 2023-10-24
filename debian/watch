@@ -1,0 +1,13 @@
+# run "uscan --report" to check or "gbp import-orig --uscan" to update
+version=4
+opts=\
+filenamemangle=s/.*?v?(@ANY_VERSION@@ARCHIVE_EXT@)/@PACKAGE@-$1/ \
+https://github.com/survivejs/webpack-merge/tags \
+.*?v?@ANY_VERSION@@ARCHIVE_EXT@ group
+
+opts=\
+component=Xwildcard,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-wildcard-$1/ \
+ https://github.com/DamonOehlman/wildcard/tags .*/archive.*/v?([\d\.]+).tar.gz group

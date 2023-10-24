@@ -1,5 +1,80 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-webpack-merge (5.8.0+~2.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Yadd ]
+  * Embed component wildcard
+  * New upstream version (Closes: #1012372, #1000247)
+  * Update install
+  * Drop patch
+  * Update dependencies: only node-clone-deep
+  * Build with tsc
+  * Mark autopkgtest as superficial
+
+ -- Yadd <yadd@debian.org>  Fri, 18 Nov 2022 17:27:01 +0100
+
+node-webpack-merge (2.2.0-6) unstable; urgency=medium
+
+  * use debhelper compatibility level 13 (not 12)
+  * declare compliance with Debian Policy 4.6.0
+  * simplify source helper script copyright-check
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+    + reference only canonical GitHub source URI
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 22 Sep 2021 13:51:03 +0200
+
+node-webpack-merge (2.2.0-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + node-webpack-merge: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 00:50:08 +0100
+
+node-webpack-merge (2.2.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * use debhelper compatibility level 12 (not 9);
+    build-depend on debhelper-compat (not debhelper)
+  * set upstream metadata fields: Bug-Submit
+
+  [ Jonas Smedegaard ]
+  * use babel7 presets;
+    explicitly set a modern babel preset
+    (avoid configfile setting older preset);
+    build-depend on node-babel7
+    (not node-babel-cli node-babel-preset-env);
+    closes: bug#959888, thanks to Pirate Praveen
+  * declare compliance with Debian Policy 4.5.0
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 14 May 2020 10:58:11 +0200
+
+node-webpack-merge (2.2.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Launch "require" test with --no-deprecation (fixes debci)
+  * Declare compliance with policy 4.4.0
+  * Add upstream/metadata
+  * Move files to /usr/share/nodejs
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 19 Sep 2019 21:59:18 +0200
+
+node-webpack-merge (2.2.0-2) unstable; urgency=medium
+
+  * Update copyright info: Fix source URLs.
+  * Fix depend (not only build-depend) on lodash.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Jan 2019 03:35:17 +0100
+
+node-webpack-merge (2.2.0-1) unstable; urgency=low
+
+  * Initial release.
+    Closes: Bug#919178.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 13 Jan 2019 14:34:01 +0100
