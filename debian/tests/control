@@ -1,0 +1,2 @@
+Test-Command: node --no-deprecation -e "require('webpack-merge');"
+Restrictions: superficial
